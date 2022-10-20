@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex001</title>
+    <style>
+        body {
+            background-color: rgb(133, 153, 240);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>~ JS! ~</p>
+    <script>
+        var num1 = Number(window.prompt('Digite 1º número: ')) // converte string -> number
+        var num2 = Number(window.prompt('Digite 2º número: '))
+        var soma = num1 + num2
+        //Number.parseInt() ou Number.parseFloat() ...converte string -> number
+        //...converter number -> string n.toString() ou String(n)
+        
+
+        window.alert(`A soma de ${num1} e ${num2} é igual a ${soma}`) //template string
+        
+        /*
+        Formatando Strings
+        var s = 'Javascript'
+        'Aprendendo' + s
+        s.lenght ...tamanho da string
+        s.toUpperCase() ...MAIúSCULA
+        s.toLowerCase() ...minúscula
+        */
+        
+    </script>
+</body>
+</html>
