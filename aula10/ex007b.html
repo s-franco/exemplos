@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Exemplo</title>
+
+    <style>
+        body{
+            font: normal 18pt Arial;
+            color: rgb(255, 255, 255);
+            background-color: rgb(3, 32, 32);
+            text-align: center;
+        }
+        input{
+            font: normal 12pt Arial;
+            width: 130px;
+        }
+        div#result{
+            font: normal 18pt Times;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>CALCULADORA</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2"> = 
+    <input type="button" value="CALC" onclick="somar()">
+
+    <div id="result">RESULTADO:</div>
+
+    <script>
+        function somar(){
+            let tn1 = window.document.querySelector('input#txtn1')
+            let tn2 = window.document.querySelector('input#txtn2')
+            let res = window.document.querySelector('input#CALC')
+
+            let numero1 = Number(tn1.value)
+            let numero2 = Number(tn2.value)
+
+            let soma = numero1 + numero2;
+
+            result.innerHTML = `RESULTADO: <strong>${soma}</strong>`
+
+        }
+    </script>
+    
+</body>
+</html>
